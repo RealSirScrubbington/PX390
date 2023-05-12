@@ -151,7 +151,7 @@ int main() {
 
    read_coefficients(N, S, sigma);
 
-   //Set up matrix and account for boundary conditions//
+   /* Set up matrix and account for boundary conditions */
 
    double alpha = D*invdx2;
    double beta_A = -(v/dx + k_pos + (2*D)*invdx2);
@@ -199,7 +199,7 @@ int main() {
      }
    }
 
-   //Solve multilinear equation//
+   /* Solve multilinear equation */
    
    solve_Ax_eq_b(&bmat, x, b);
    
