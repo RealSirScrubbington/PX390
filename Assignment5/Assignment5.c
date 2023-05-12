@@ -143,7 +143,7 @@ if (u == NULL) {
 
 read_coefficients(N_x, N_y, u);
 
-//I have no idea what im doing//
+/* Set up matrix and account for boundary conditions (note that my "method" for doing this is quite suboptimal as there are many boundary conditions to account for but it does get the job done in the end; I would be interested in being shown a more efficient approach) */
 
    band_mat bmat;
    long nbands_low = N_x;
